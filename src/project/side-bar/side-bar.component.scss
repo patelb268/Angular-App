@@ -1,0 +1,66 @@
+.main-div {
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.side-bar {
+  width: 70px;
+  border-radius: 0 7px 7px 0;
+  backdrop-filter: saturate(180%) blur(5px);
+  background: rgba(255,255,255,0.72);
+  border: 1px solid rgba(0,0,0,0.16);
+  border-left: none;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  z-index: 1;
+  //background: #dedede;
+}
+
+.image-container {
+  text-align: center;
+  padding: 20px 10px;
+  width: 70px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  //&:hover {
+  //  padding: 5px;
+  //}
+}
+
+.welkin-icon {
+  width: 25px;
+  transition-duration: 0.2s;
+  &:hover {
+    width: 30px;
+  }
+}
+
+.content-div {
+  z-index: 0;
+}
+
+.icon-content {
+  //position: absolute;
+  text-align: center;
+  padding: 20px 20px 20px 30px;
+  font-size: 1rem;
+  color: #929292;
+  width: 225px;
+  height: 66px;
+  border-radius: 0 7px 7px 0;
+  z-index: 4;
+  backdrop-filter: saturate(180%) blur(5px);
+  background: rgba(255,255,255,0.72);
+  border: 1px solid rgba(0,0,0,0.16);
+  border-left: none;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  transform: translateX(-200px);
+  transition-duration: 0.1s;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.translate-right {
+  transform: translateX(-10px);
+  opacity: 1;
+}

@@ -1,0 +1,52 @@
+.connect-us {
+  position: fixed;
+  height: 50px;
+  //padding: 12px;
+  backdrop-filter: saturate(180%) blur(5px);
+  background: rgba(85, 85, 85, 0.72);
+  bottom: 0;
+  color: white;
+  //border: 1px solid #555;
+  //border-bottom: none;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 7px 7px 0 0;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.copyright-text {
+  padding: 17px;
+  font-size: 0.75rem;
+}
+
+.connect-us-text {
+  padding: 14px;
+  font-size: 0.95rem;
+}
+
+.connect-us-input {
+  margin: 7px 0;
+  padding: 5px 5px 5px 10px;
+  width: 300px;
+  border: none;
+  border-radius: 7px;
+  font-size: 0.95rem;
+  color: #888;
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
+
+.connect-submit {
+  margin: 7px;
+  background: #999;
+  border: none;
+  font-size: 0.95rem;
+  border-radius: 7px;
+  color: white;
+  transition-duration: 0.3s;
+  &:hover {
+    background: #888;
+  }
+}

@@ -1,0 +1,103 @@
+<!--<app-welkin-header [scrolledDown]="scrolledDown">-->
+<!--</app-welkin-header>-->
+<div class="d-flex flex-row justify-content-center animation-div">
+    <img class="bird-diverter-gif" src="assets/birdDiverter.gif">
+</div>
+<!--<div class="background-clouds">-->
+<!--    <img class="clouds-1" appParallax [ratio]="1.5" src="assets/clouds-1.png">-->
+<!--    <img class="clouds-2" appParallax [ratio]="2" src="assets/clouds-2.png">-->
+<!--</div>-->
+<!--<div class="birds">-->
+<!--    <img class="bird-1" appParallax [ratio]="1.5" src="assets/birds/bird-1.png">-->
+<!--    <img class="bird-2" appParallax [ratio]="2" src="assets/birds/bird-2.png">-->
+<!--    <img class="bird-3" appParallax [ratio]="2.5" src="assets/birds/bird-3.png">-->
+<!--</div>-->
+
+<div class="content" id="main-content">
+    <section class="d-flex flex-row justify-content-center product-name" [@inOutAnimation]>
+        <img class="background-towers" src="assets/background-towers3.png">
+        <img class="firefly-name" src="assets/firefly2.png" appParallax [speed]="-0.5">
+        <img class="windmill-wings" id="windmill-wings" src="assets/windmill-wings2.png">
+        <img class="firefly-wireframe" id="firefly-wireframe-1" src="assets/product/wireframe-2.png" appParallax [speed]="-0.5">
+<!--        <div class="product-heading-div">-->
+<!--            <div class="product-heading">FireFly<sup class="font-size-2">®</sup></div>-->
+<!--            <div class="product-bird-diverter">Bird Diverters</div>-->
+<!--        </div>-->
+    </section>
+    <section class="features" id="eff-clamp">
+        <div class="features-subsection" id="features-subsection" (scroll)="featuresSubsectionScrolled($event)">
+            <div class="clamp-content">
+                <div class="w-50 d-flex">
+                    <div class="clamp-details" *ngIf="showClampDetails" [@detailsAnimation1]>
+                        <div>
+                            <div class="font-size-4 font-weight-700 line-height-for-product">One for all.</div>
+                            <div class="font-size-3 font-weight-500 line-height-for-product">High quality clamp</div>
+                            <div class="font-size-3 font-weight-500 line-height-for-product">Apt for all wires.</div>
+                            <div class="clamp-horizontal-line"></div>
+                            <div class="most-eff">The most efficient bird diverter.</div>
+                            <div class="get-quote-clamp">Get a quote now</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-50 d-flex flex-column justify-content-center">
+                    <img class="clamp-image" src="assets/product/clamp2.png">
+                </div>
+            </div>
+            <div class="uv-content">
+                <img class="uv-bird-diverter" src="assets/product/uv/birdDiverter2.png">
+                <div id="uv-subsection-1">
+<!--                    Nothing to add-->
+                </div>
+                <div id="uv-subsection-2">
+                    <div class="uv-details" *ngIf="showUVDetails" [@detailsAnimation1]>
+                        <div class="">
+                            <div class="font-size-4 font-weight-700 line-height-for-product">Designed to cater</div>
+                            <div class="font-size-4 font-weight-500 line-height-for-product"><span class="font-weight-900">bird</span>s' vision.</div>
+                            <div class="font-size-3 font-weight-500 line-height-for-product">Reflects light in UV spectrum.</div>
+                            <div class="d-flex flex-row justify-content-end">
+                                <div class="uv-horizontal-line"></div>
+                            </div>
+                            <div class="uv-beacon font-weight-900">"UV Beacon"</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="size-content">
+                <img class="size-bird-diverter-wireframe-1" src="assets/product/size/wireframe1.png">
+                <img class="size-bird-diverter-wireframe-2" src="assets/product/size/wireframeWithOrange.png">
+                <div id="size-subsection">
+                    <div class="size-details" *ngIf="showSizeDetails" [@detailsAnimation1]>
+                        <div class="">
+                            <div class="font-size-3 font-weight-500 line-height-for-product"><span class="size-orange">Light weight</span> and</div>
+                            <div class="font-size-4 font-weight-500 line-height-for-product"><span class="size-orange">compact size</span>.</div>
+                            <div class="font-size-3 font-weight-500 line-height-for-product">Allows easy sway and</div>
+                            <div class="font-size-3 font-weight-500 line-height-for-product">swing in very low wind.</div>
+                            <div class="d-flex flex-row justify-content-start">
+                                <div class="size-horizontal-line"></div>
+                            </div>
+                            <div class="size-last-line">Has no significant effect on the line.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="glow-content">
+                <img class="glow-bird-diverter" src="assets/product/glow/birdDiverter2.png">
+                <div id="glow-subsection">
+                    <div class="glow-details" *ngIf="showGlowDetails" [@detailsAnimation1]>
+                        <div style="height: 20rem"></div>
+                        <div class="">
+                            <div class="font-size-4 font-weight-500 line-height-for-product"><span class="glow-green">Glow</span> in the dark.</div>
+                            <div class="font-size-3 font-weight-500 line-height-for-product">Provides enhanced visibility</div>
+                            <div class="font-size-3 font-weight-500 line-height-for-product">to birds at night.</div>
+                            <div class="d-flex flex-row justify-content-start">
+                                <div class="glow-horizontal-line"></div>
+                            </div>
+                            <div class="glow-last-line">Upto <span class="font-weight-700">12</span> hours.</div>
+                            <div class="get-quote-glow">Get a quote now</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

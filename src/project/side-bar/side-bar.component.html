@@ -1,0 +1,38 @@
+<div class="d-flex flex-column justify-content-center position-fixed h-100 main-div">
+    <div class="d-flex flex-row" style="height: 330px">
+        <div class="side-bar">
+            <div class="d-flex flex-row">
+                <div class="image-container" (mouseover)="displayCallContent('call')" (mouseleave)="hideCallContent()">
+                    <img class="welkin-icon" src="assets/icons/call2.png">
+                </div>
+            </div>
+            <div>
+                <div class="image-container" (mouseover)="displayCallContent('quote')" (mouseleave)="hideCallContent()">
+                    <img class="welkin-icon" src="assets/icons/quote2.png">
+                </div>
+            </div>
+            <div>
+                <div class="image-container" (mouseover)="displayCallContent('download')" (mouseleave)="hideCallContent()">
+                    <img class="welkin-icon" src="assets/icons/download2.png">
+                </div>
+            </div>
+            <div>
+                <div class="image-container" (mouseover)="displayCallContent('mail')" (mouseleave)="hideCallContent()">
+                    <img class="welkin-icon" src="assets/icons/mail2.png">
+                </div>
+            </div>
+            <div>
+                <div class="image-container" (mouseover)="displayCallContent('linkedIn')" (mouseleave)="hideCallContent()">
+                    <img class="welkin-icon" src="assets/icons/linkedin2.png">
+                </div>
+            </div>
+        </div>
+        <div class="content-div">
+            <div class="icon-content" [ngClass]="{'translate-right': showCall}" (mouseover)="displayCallContent('call')" (mouseleave)="hideCallContent()">Talk to us</div>
+            <div class="icon-content" [ngClass]="{'translate-right': showQuote}" (mouseover)="displayCallContent('quote')" (mouseleave)="hideCallContent()">Get a Quote</div>
+            <div class="icon-content" [ngClass]="{'translate-right': showDownload}" (mouseover)="displayCallContent('download')" (mouseleave)="hideCallContent()">Download Brochure</div>
+            <div class="icon-content" [ngClass]="{'translate-right': showMail}" (mouseover)="displayCallContent('mail')" (mouseleave)="hideCallContent()">Write to us</div>
+            <div class="icon-content" [ngClass]="{'translate-right': showLinkedIn}" (mouseover)="displayCallContent('linkedIn')" (mouseleave)="hideCallContent()">Connect on LinkedIn</div>
+        </div>
+    </div>
+</div>
